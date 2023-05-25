@@ -12,3 +12,17 @@ let spaceship = {
 };
 
 // Write your code below
+
+ let greenEnergy = (obj) => {
+  obj['type'] = "avocado oil";
+ }
+  let remotelyDisable = (obj = true) => {
+
+
+  }
+
+greenEnergy(spaceship);
+// remotelyDisable(spaceship);
+
+console.log(spaceship);
+

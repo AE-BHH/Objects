@@ -11,6 +11,7 @@ Make sure to use bracket and dot notation to get the passenger object through ne
 */
 
 
+
 let spaceship = {
   passengers: [{name: "Dan"}],
   telescope: {
@@ -41,3 +42,27 @@ let spaceship = {
 }; 
 
 //Youre code goes here
+
+// 1
+// Create a variable capFave and assign the captain‘s favorite food (the element in the 0th index of her 'favorite foods' array) to it. 
+// Make sure to use bracket and dot notation to get the value of the food through nested access (don’t just copy the value into the variable!)
+
+let capFave = spaceship.crew.captain['favorite foods'][0];
+
+// console.log(capFave);
+
+
+// 2
+// Right now the passengers property has a value of null. Instead, assign as its value an array of objects.
+// These objects should represent the spaceship‘s passengers as individual objects. Make at least one passenger object in the array that has at least one key-value pair on it.
+
+spaceship.passengers = [{ lastName: 'Math' }]
+console.log(`The passanger's last name is: ${spaceship.passengers[0].lastName}`);
+
+
+// 3
+// Create a variable firstPassenger and assign the first passenger as its value (the element in the 0th index of the spaceship.passengers array you just made). 
+// Make sure to use bracket and dot notation to get the passenger object through nested access (don’t just copy the object into the variable!)
+
+let firstPassenger = spaceship.passengers[0];
+console.log(firstPassenger);
